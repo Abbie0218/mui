@@ -2,6 +2,9 @@
   "name": "@Abbie0218/template-muibutton",
   "version": "1.0.0",
   "description": "",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Abbie0218"
+  },
   "scripts": {
     "rollup": "rollup -c rollup.config.js --bundleConfigAsCjs"
   },
