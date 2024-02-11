@@ -1,10 +1,14 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 
-const MuiButton = ({ onClick, children }) => {
+interface IProps{
+  onClick : any,
+  label: any
+}
+const MuiButton = (props:IProps) => {
   return (
-    <Button variant="contained" color="primary" onClick={onClick}>
-      {children}
+    <Button variant="contained" color="primary" onClick={props.onClick}>
+      {props.label}
     </Button>
   );
 };
